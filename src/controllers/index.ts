@@ -1,0 +1,1 @@
+export { WelcomeController } from './WelcomeController';
