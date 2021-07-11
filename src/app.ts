@@ -1,5 +1,4 @@
 import express from 'express';
-import bodyParser from 'body-parser';
 import { Controller } from './interfaces';
 
 export class App {
@@ -15,7 +14,7 @@ export class App {
   }
 
   private initializeMiddleware() {
-    this.app.use(bodyParser.json());
+    this.app.use(express.json());
   }
 
   private initalizeControllers(controllers: Array<Controller>) {
