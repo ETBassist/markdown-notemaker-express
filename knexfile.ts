@@ -1,7 +1,7 @@
 // Update with your config settings.
 
 module.exports = {
-
+  // TODO: update to use env vars
   development: {
     client: "postgresql",
     connection: {
