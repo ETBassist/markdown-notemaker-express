@@ -6,7 +6,7 @@ export async function up(knex: Knex): Promise<void> {
     table.increments();
     table.string('firstName');
     table.string('lastName');
-    table.timestamps();
+    table.timestamps(true, true);
   });
 }
 

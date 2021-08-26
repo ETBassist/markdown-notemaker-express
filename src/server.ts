@@ -1,8 +1,11 @@
 import { App } from './app';
-import { WelcomeController } from './controllers';
+import { WelcomeController, PostsController } from './controllers';
 
 const app = new App(
-  [new WelcomeController],
+  [
+    new WelcomeController,
+    new PostsController
+  ],
   3001
 );
 
